@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MapGuessr</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="title">
+
+            <div class="item" id="vtop">
+                <h1>MapGuessr</h1>
+                <div id="score"></div>
+            </div>
+
+            <div class="item" id="top">
+                <div id="prompt"></div>
+                <div id="response"></div>
+            </div>
+
+            <div class="item">
+                <div id="map"></div>
+            </div>
+            
+        </div>
+
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. AIzaSyCWvGo4eoOQGGs44Sgp36XirucbJhoK2aM -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWvGo4eoOQGGs44Sgp36XirucbJhoK2aM&map_ids=62c3cd82857a5842&callback=initMap">
+            </script>
+</body>
+
+</html>
